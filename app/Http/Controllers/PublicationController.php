@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Publication;
 use Illuminate\Http\Request;
 
 class PublicationController extends Controller
@@ -13,16 +12,6 @@ class PublicationController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
-        //
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
     {
         //
     }
@@ -41,21 +30,10 @@ class PublicationController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Publication  $publication
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Publication $publication)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\Publication  $publication
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Publication $publication)
+    public function show($id)
     {
         //
     }
@@ -64,10 +42,10 @@ class PublicationController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Publication  $publication
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Publication $publication)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -75,10 +53,10 @@ class PublicationController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Publication  $publication
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Publication $publication)
+    public function destroy($id)
     {
         //
     }

@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Events;
 use Illuminate\Http\Request;
 
 class EventController extends Controller
@@ -13,16 +12,6 @@ class EventController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
-        //
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
     {
         //
     }
@@ -41,21 +30,10 @@ class EventController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Events  $events
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Events $events)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\Events  $events
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Events $events)
+    public function show($id)
     {
         //
     }
@@ -64,10 +42,10 @@ class EventController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Events  $events
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Events $events)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -75,10 +53,10 @@ class EventController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Events  $events
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Events $events)
+    public function destroy($id)
     {
         //
     }

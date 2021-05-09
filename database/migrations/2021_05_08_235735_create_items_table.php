@@ -15,6 +15,13 @@ class CreateItemsTable extends Migration
     {
         Schema::create('items', function (Blueprint $table) {
             $table->id();
+            $table->text('name');
+            $table->text('link');
+            $table->text('year')->nullable();
+            $table->text('description')->nullable();
+            $table->text('title')->nullable();
+            $table->text('image')->nullable();
+            $table->foreignId('sub_category_id')->constrained();
             $table->timestamps();
         });
     }

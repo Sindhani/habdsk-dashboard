@@ -15,6 +15,11 @@ class CreateGallariesTable extends Migration
     {
         Schema::create('gallaries', function (Blueprint $table) {
             $table->id();
+            $table->text('url');
+            $table->text('title')->nullable();
+            $table->longText('description')->nullable();
+            $table->text('location')->nullable();
+            $table->text('year')->nullable();
             $table->timestamps();
         });
     }

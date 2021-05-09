@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\SubCategory;
 use Illuminate\Http\Request;
 
 class SubCategoryController extends Controller
@@ -13,16 +12,6 @@ class SubCategoryController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
-        //
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
     {
         //
     }
@@ -41,21 +30,10 @@ class SubCategoryController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\SubCategory  $subCategory
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(SubCategory $subCategory)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\SubCategory  $subCategory
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(SubCategory $subCategory)
+    public function show($id)
     {
         //
     }
@@ -64,10 +42,10 @@ class SubCategoryController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\SubCategory  $subCategory
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, SubCategory $subCategory)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -75,10 +53,10 @@ class SubCategoryController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\SubCategory  $subCategory
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(SubCategory $subCategory)
+    public function destroy($id)
     {
         //
     }
